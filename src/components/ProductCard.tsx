@@ -8,7 +8,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const { cart, dispatch } = useContext(CartContext);
+  const { dispatch } = useContext(CartContext);
 
   const handleAddToCart = (product: IProduct) => {
     dispatch({ type: CartActionType.ADD_ITEM, payload: { product, quantity: 1 } });

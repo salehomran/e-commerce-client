@@ -8,7 +8,7 @@ import { CartActionType } from "../reducers/CartReducer";
 export default function ProductPage() {
     const { id } = useParams();
     const [product, setProduct] = useState<IProduct | null>(null);
-    const {cart, dispatch} = useContext(CartContext);
+    const {dispatch} = useContext(CartContext);
 
     useEffect(() => {
         fetchProduct(Number(id)).then( (product) => setProduct(product));
