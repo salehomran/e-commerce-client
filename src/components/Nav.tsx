@@ -13,6 +13,9 @@ export const Nav = () => {
         <li>
           <NavLink to="/checkout">Checkout</NavLink>
         </li>
+        <li>
+          <NavLink to="/search">Search</NavLink>
+        </li>
       </ul>
     </nav>
   );
